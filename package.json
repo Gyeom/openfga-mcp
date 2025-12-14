@@ -1,0 +1,50 @@
+{
+  "name": "@anthropic/openfga-mcp",
+  "version": "1.0.0",
+  "description": "OpenFGA MCP Server for Claude Code - Manage authorization models, tuples, and permissions",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "openfga-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openfga",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "authorization",
+    "permissions",
+    "rebac",
+    "fga"
+  ],
+  "author": "42dot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/42dot/openfga-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/42dot/openfga-mcp/issues"
+  },
+  "homepage": "https://github.com/42dot/openfga-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
