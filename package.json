@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic/openfga-mcp",
+  "name": "openfga-mcp-server",
   "version": "1.0.0",
   "description": "OpenFGA MCP Server for Claude Code - Manage authorization models, tuples, and permissions",
   "type": "module",
